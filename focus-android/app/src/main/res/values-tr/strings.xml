@@ -84,7 +84,6 @@
     <string name="share_dialog_title">Paylaş</string>
 
     <string name="notification_erase_title_android_14">Gezinti geçmişi silinsin mi?</string>
-    <string name="notification_erase_text_android_14" moz:RemovedIn="124" tools:ignore="UnusedResources">Gezinti geçmişinizi güvenli bir şekilde silmek için bu bildirime dokunun veya bildirimi temizleyin.</string>
 
     <!-- Text shown in the notification description that pops up to remind the user that a browsing session is active
     for Android 14+. -->
@@ -123,23 +122,23 @@
     <!-- This is the label of an action we offer when the user selects text in other third-party apps.
          Focus is hard coded since we can't use variables in this context.
          Do not translate or transliterate Focus.-->
-    <string name="text_selection_search_action_focus">Focus’ta ara</string>
+    <string name="text_selection_search_action_focus" tools:ignore="BrandUsage">Focus’ta ara</string>
     <!-- This is the label of an action we offer when the user selects text in other third-party apps.
              Klar is hard coded since we can't use variables in this context.
              Do not translate or transliterate Klar.-->
-    <string name="text_selection_search_action_klar">Klar’da ara</string>
+    <string name="text_selection_search_action_klar" tools:ignore="BrandUsage">Klar’da ara</string>
     <!-- This is the label of an action we offer when the user selects text in other third-party apps.
             Focus Beta is hard coded since we can't use variables in this context.
             Do not translate or transliterate Focus Beta.-->
-    <string name="text_selection_search_action_focus_beta">Focus Beta’da ara</string>
+    <string name="text_selection_search_action_focus_beta" tools:ignore="BrandUsage">Focus Beta’da ara</string>
     <!-- This is the label of an action we offer when the user selects text in other third-party apps.
           Focus Nightly is hard coded since we can't use variables in this context.
           Do not translate or transliterate Focus Nightly.-->
-    <string name="text_selection_search_action_focus_nightly">Focus Nightly’de ara</string>
+    <string name="text_selection_search_action_focus_nightly" tools:ignore="BrandUsage">Focus Nightly’de ara</string>
 
     <!-- Content of about focus. Argument 1 is the app name (Firefox Focus/Firefox Klar/etc).
          Argument 2 is the url for the learn-more link. -->
-    <string name="about_content"><![CDATA[<p>%1$s kontrolü size verir.</p>
+    <string name="about_content" tools:ignore="IncorrectStraightDoubleQuote"><![CDATA[<p>%1$s kontrolü size verir.</p>
 <p>Onu gizlilik odaklı bir tarayıcı olarak kullanabilirsiniz:
   <ul>
     <li>Doğrudan uygulamada arama yapabilir ve web’de gezinebilirsiniz</li>
@@ -352,6 +351,11 @@
     <!-- %1$s will be replaced with the name of the app (e.g. Firefox Focus) -->
     <string name="preference_mozilla_telemetry_summary2">Mozilla, yalnızca %1$s’u daha da geliştirmek için ihtiyaç duyduğumuz verileri toplar.</string>
 
+    <!-- Preference switch for daily usage ping data collection -->
+    <string name="preference_daily_usage_ping_title">Günlük kullanım ping’i</string>
+    <string name="preference_daily_usage_ping_description">Bu sayede Mozilla aktif kullanıcı sayısını tahmin edebilir.</string>
+    <string name="preference_daily_usage_ping_learn_more">Daha fazla bilgi al</string>
+
     <!-- In-app link (in settings) to Focus privacy notice. -->
     <string name="preference_privacy_notice">Gizlilik bildirimi</string>
 
@@ -360,6 +364,9 @@
 
     <!-- Link to Focus licensing information from other libraries that we use. -->
     <string name="preference_libraries_we_use">Kullandığımız kitaplıklar</string>
+
+    <!-- Link to Focus Crash reports list. -->
+    <string name="preference_crashes">Çökmeler</string>
 
     <!-- Open Source Licenses page title. The first parameter is the app name -->
     <string name="open_source_licenses_title">%s | OSS Kitaplıkları</string>
@@ -516,10 +523,7 @@
 
 
 
-  <!-- Content description (not visible, for screen readers etc.): This is the description for the close button from the new onboarding flow screen one and two -->
-    <string name="onboarding_close_button_content_description">Kapat</string>
-
-    <!-- New Onboarding flow first screen title -->
+  <!-- New Onboarding flow first screen title -->
     <!-- %1$s will be replaced by the app name and build variant(e.g. Firefox Focus, Firefox Klar Nightly) -->
     <string name="onboarding_first_screen_title">%1$s tarayıcısına hoş geldiniz</string>
 
@@ -609,9 +613,12 @@
     <!-- Label for a button in the "tabs tray" to erase the browsing history (closes all tabs and removes associated data). -->
     <string name="tabs_tray_action_erase">Gezinti geçmişini sil</string>
 
+    <!-- Label for the option in the Focus "tabs tray" to clos the other tabs except the current tab. -->
+    <string name="tabs_tray_action_erase_other">Diğer sekmeleri kapat</string>
+
     <!-- If the user decides to open the current page in another browser and if Firefox is not installed then we show this
       item in the list of browsers. Clicking it will open the app store installed on the device (usually that's Google Play). -->
-    <string name="download_firefox">Firefox’u indir</string>
+    <string name="download_firefox" tools:ignore="BrandUsage">Firefox’u indir</string>
 
     <!-- Text shown in the "Your rights" screen.
     %1$s will be replaced with the name of the app (e.g. Firefox Focus)-->
@@ -623,23 +630,23 @@
   <!-- Text shown in the "Your rights" screen.
     %1$s will be replaced with the name of the app (e.g. Firefox Focus)
     %2$s will be replaced with a URL linking to the MPL (e.g. https://www.mozilla.org/en-US/MPL/) -->
-    <string name="your_rights_content2"><![CDATA[%1$s, <a href="%2$s">Mozilla Kamu Lisansı</a> ve diğer açık kaynak lisanslarının koşullarıyla sunulmaktadır.]]></string>
+    <string name="your_rights_content2" tools:ignore="IncorrectStraightDoubleQuote"><![CDATA[%1$s, <a href="%2$s">Mozilla Kamu Lisansı</a> ve diğer açık kaynak lisanslarının koşullarıyla sunulmaktadır.]]></string>
 
     <!-- Text shown in the "Your rights" screen.
     %1$s will be replaced with the name of the app (e.g. Firefox Focus)
     %2$s will be replaced with a URL linking to the trademark policy (e.g. https://www.mozilla.org/foundation/trademarks/policy/) -->
-    <string name="your_rights_content3"><![CDATA[Mozilla Vakfı’nın tescilli markaları olan Mozilla, Firefox, %1$s adları ve logoları da dahil olmak üzere, tescilli markalarımızın hakları ve lisansları sizinle paylaşılmamaktadır. Daha fazla bilgi almak isterseniz <a href="%2$s">buraya</a> bakabilirsiniz.]]></string>
+    <string name="your_rights_content3" tools:ignore="BrandUsage,IncorrectStraightDoubleQuote"><![CDATA[Mozilla Vakfı’nın tescilli markaları olan Mozilla, Firefox, %1$s adları ve logoları da dahil olmak üzere, tescilli markalarımızın hakları ve lisansları sizinle paylaşılmamaktadır. Daha fazla bilgi almak isterseniz <a href="%2$s">buraya</a> bakabilirsiniz.]]></string>
 
     <!-- Text shown in the "Your rights" screen.
     %1$s will be replaced with the name of the app (e.g. Firefox Focus)
     %2$s will be replaced with a URL linking to the list of licenses used by the dependencies.-->
-    <string name="your_rights_content4"><![CDATA[Bazı ek %1$s kaynak kodları çeşitli özgür lisanslar ve açık kaynak <a href="%2$s">lisansları</a> ile sunulmaktadır.]]></string>
+    <string name="your_rights_content4" tools:ignore="IncorrectStraightDoubleQuote"><![CDATA[Bazı ek %1$s kaynak kodları çeşitli özgür lisanslar ve açık kaynak <a href="%2$s">lisansları</a> ile sunulmaktadır.]]></string>
 
     <!-- Text shown in the "Your rights" screen.
     %1$s will be replaced with the name of the app (e.g. Firefox Focus)
     %2$s will be replaced with a URL linking to the GPL
     %3$s will be replaced with a URL linking to the tracking protection wiki page (e.g. https://wiki.mozilla.org/Security/Tracking_protection#Lists) -->
-    <string name="your_rights_content5"><![CDATA[%1$s ayrıca Disconnect, Inc. tarafından sağlanan engelleme listelerini kullanır. Tarayıcıdan ayrı ve bağımsız olan <a href="%3$s">bu çalışmalar</a> <a href="%2$s">GNU Kamu Lisansı v3</a> ile sunulmaktadır.]]></string>
+    <string name="your_rights_content5" tools:ignore="IncorrectStraightDoubleQuote"><![CDATA[%1$s ayrıca Disconnect, Inc. tarafından sağlanan engelleme listelerini kullanır. Tarayıcıdan ayrı ve bağımsız olan <a href="%3$s">bu çalışmalar</a> <a href="%2$s">GNU Kamu Lisansı v3</a> ile sunulmaktadır.]]></string>
 
     <!-- Text shown in prompts for GeckoView -->
     <string name="gv_prompt_username_hint">Kullanıcı adı</string>
@@ -831,13 +838,13 @@
     <string name="preference_studies">Araştırmalar</string>
 
     <!-- Preference for studies summary-->
-    <string name="preference_studies_summary">Firefox zaman zaman araştırmalar yükleyip çalıştırabilir.</string>
+    <string name="preference_studies_summary" tools:ignore="BrandUsage">Firefox zaman zaman araştırmalar yükleyip çalıştırabilir.</string>
 
     <!-- Learn more link for studies, links to an article for more information about studies. -->
     <string name="studies_learn_more">Daha fazla bilgi al</string>
 
     <!-- Dialog message shown when some changes are made on studies -->
-    <string name="studies_restart_app">Değişiklikleri uygulamak için uygulama kapanacak</string>
+    <string name="studies_restart_app" moz:removedIn="135">Değişiklikleri uygulamak için uygulama kapanacak</string>
 
     <!-- Title of the remove studies button -->
     <string name="studies_remove">Kaldır</string>
@@ -932,9 +939,6 @@
 
     <!-- Label for the button in the snackbar that switches to the newly opened tab -->
     <string name="open_new_tab_snackbar">Geç</string>
-
-    <!-- Text displayed in a notification when the user enters full screen mode -->
-    <string name="full_screen_notification">Tam ekran moduna geçiliyor</string>
 
     <!-- Preference for switching to a new tab immediately after opening -->
     <string name="preference_open_new_tab">Hemen yeni sekmedeki bağlantıya geç</string>
@@ -1042,7 +1046,7 @@
 
     <!-- The text of the error page for websites that do not support HTTPS when HTTPS-Only is turned on. %1$s will get replaced with the name of the app (e.g. "Firefox Focus").
         Contains a button that will redirect the user to Privacy & Security Screen-->
-    <string name="errorpage_httpsonly_message2"><![CDATA[%1$s, güvenliğinizi artırmak için mümkünse HTTPS bağlantısı kullanmaya çalışır.
+    <string name="errorpage_httpsonly_message2" tools:ignore="IncorrectStraightDoubleQuote"><![CDATA[%1$s, güvenliğinizi artırmak için mümkünse HTTPS bağlantısı kullanmaya çalışır.
      <a href="%2$s">Daha fazla bilgi alın</a> <br/><br/>
      Bu ayarı Ayarlar > Gizlilik ve Güvenlik > Güvenlik kısmından değiştirebilirsiniz.]]></string>
 
@@ -1124,4 +1128,12 @@
     <!-- This is te text of the snackbar that appears after the search widget was added successfully
     to the home screen. -->
     <string name="promote_search_widget_snackbar_message">Widget ana ekrana eklendi</string>
+
+    <!-- Messages explaining how to exit fullscreen mode -->
+    <!-- Message shown to explain how to exit fullscreen mode when gesture navigation is enabled. -->
+    <!-- Localisation note: this text should be as short as possible, max 68 chars -->
+    <string name="exit_fullscreen_with_gesture_short">Çıkmak için ekranı yukarıdan çekip geri dönme hareketini kullanın</string>
+    <!-- Message shown to explain how to exit fullscreen mode when using back button navigation. -->
+    <!-- Localisation note: this text should be as short as possible, max 68 chars -->
+    <string name="exit_fullscreen_with_back_button_short">Çıkmak için ekranı yukarıdan çekip geri düğmesine basın</string>
 </resources>
